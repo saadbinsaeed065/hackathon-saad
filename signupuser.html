@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="style.css">
+   
+    <title>Document</title>
+</head>
+<body class="login-signup-body">
+    <h1>SUPER FANTASY FOOD</h1>
+    <div class="signupuser container">
+        <img src="images/avator-signup.png" class="avator" alt="">
+        <h2 class="login-here" >User Signup</h2>
+        
+            UserName: <br>
+            <input type="text" class="b-less" id="username" placeholder="Enter username" required>
+           
+            Email: <br>
+            <input type="email" class="b-less" id="email" placeholder="Enter email">
+            
+            Password: <br>
+            <input type="password" class="b-less"  id="password" placeholder="Enter password" required>
+
+            Phone: <br>
+            <input type="number" class="b-less" id="phone" placeholder="Enter number" required>
+
+            Country: <br>
+            <input type="text" class="b-less" id="country" placeholder="Enter your country" required>
+
+            City: <br>
+            <input type="text" class="b-less" id="city" placeholder="Enter city" required>
+            
+            
+                
+           <input type="submit" value="Signup" onclick="signupuser()"   name="" id="signup"> 
+            <br>
+            <div class="alert alert-dark" role="alert" id="message"></div>
+        
+        
+
+        
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyB6v1WMF6BPXETlORFxBINJzPe_OOuF_CU",
+    authDomain: "hackathon-saad-af644.firebaseapp.com",
+    databaseURL: "https://hackathon-saad-af644-default-rtdb.firebaseio.com",
+    projectId: "hackathon-saad-af644",
+    storageBucket: "hackathon-saad-af644.appspot.com",
+    messagingSenderId: "374384224345",
+    appId: "1:374384224345:web:f8fecfe1a9a115523ce948"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="app.js"></script>
+   
+</body>
+</html>
